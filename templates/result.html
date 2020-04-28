@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+
+    <title>Lestyn| Loan Prediction</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom-styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+
+<body>
+
+    <section class="result-container">
+
+        <div class="result-body container align-items-center d-flex justify-content-center">
+            <div class="result-area shadow-sm p-5 d-flex justify-content-center flex-column">
+                <h1 class="font-weight-bold"> Dear {{ name }},</h1>
+                <h2>{{ prediction }}</h2>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="../static/vendor/jquery.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/./js/scripts.js"></script>
+</body>
+
+</html>

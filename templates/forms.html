@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+
+    <title>Cel's| Loan Prediction!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom-styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+
+<body>
+
+    <section class="container">
+        <div class="py-5 text-center">
+            <h2 class="font-weight-bold text-capitalize blue-text">Hello! Please fill the form below</h2>
+        </div>
+
+        <form action="/result" method="POST" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group The columns">
+                    <label for="inputEmail4">Please Enter your name?</label>
+                    <input type="text" class="form-control" id="name" name="Name" placeholder="Name" required='required'>
+                </div>
+                <div class="form-group The columns">
+                    <label for="inputCity">How much are you applying for?</label>
+                    <input type="number" class="form-control" id="LoanAmount" name="LoanAmount" placeholder="Amount" required='required'>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group The columns">
+                    <p for="inputPassword4">What is your Employment Status?</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Employed" id="Employed1"
+                            value="1" required='required'>
+                        <label class="form-check-label" for="Employed1">Employed</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Employed" id="Employed0"
+                            value="0" required='required'>
+                        <label class="form-check-label" for="Employed0">Not Employed</label>
+                    </div>
+                </div>
+
+                <div class="form-group The columns">
+                    <p for="Edu">What is your Education Level?</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Graduate" id="Edu1"
+                            value="1" required='required'>
+                        <label class="form-check-label" for="Educated">Graduate</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Graduate" id="Edu0"
+                            value="0" required='required'>
+                        <label class="form-check-label" for="Educated">Not a Graduate</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group The columns">
+                    <p for="inputPassword4">Gender</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" id="inlineRadio1"
+                            value="1" required='required'>
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" id="inlineRadio2"
+                            value="0" required='required'>
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group The columns">
+                    <p for="inputPassword4">What is your Marital Status?</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Married_" id="inlineRadio3"
+                            value="1" required='required'>
+                        <label class="form-check-label" for="inlineRadio3">Married</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Married_" id="inlineRadio4"
+                            value="2" required='required'>
+                        <label class="form-check-label" for="inlineRadio4">Not Married</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-group The columns">
+                    <label for="inputCity">What is Your Monthly Income?</label>
+                    <input type="text" placeholder="Income?" class="form-control" name="MonthlyIncome" id="inputCity" required='required'>
+                </div>
+
+
+                <div class="form-group The columns">
+                    <label for="inputCity">What is Your Co-Applicant's Monthly Income?</label>
+                    <input type="text" placeholder="Income?" class="form-control" name="Co-Applicants" id="inputCity" required='required'>
+                </div>
+
+
+                <div class="form-group The columns">
+                    <p for="inputPassword4">How many dependents do you have?</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Dependants" id="inlineRadio5"
+                            value="4" required='required'>
+                        <label class="form-check-label" for="inlineRadio5">0</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Dependants" id="inlineRadio6"
+                            value="3" required='required'>
+                        <label class="form-check-label" for="inlineRadio6">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Dependants" id="inlineRadio7"
+                            value="2" required='required'>
+                        <label class="form-check-label" for="inlineRadio7">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Dependants" id="inlineRadio7"
+                            value="1" required='required'>
+                        <label class="form-check-label" for="inlineRadio7">3+</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group The columns">
+                    <p for="inputState">When do you intend to pay back the Loan?</p>
+                    <select id="inputMonth" class="form-control" name='Months' required='required'>
+                        <!-- <option selected>Choose...</option> -->
+                        <!-- <option>...</option> -->
+                        <option value="12" name="12 Months">6 Months</option>
+                        <option value="11" name="12 Months">12 Months</option>
+                        <option value="11" name="12 Months">18 Months</option>
+                        <option value="10" name="24 Months">24 Months</option>
+                        <option value="9" name="36 Months">36 Months</option>
+                        <option value="8" name="48 Months">48 Months</option>
+                        <option value="7" name="60 Months">60 Months</option>
+                        <option value="6" name="84 Months">84 Months</option>
+                        <option value="5" name="120 Months">120 Months</option>
+                        <option value="4" name="180 Months">180 Months</option>
+                        <option value="3" name="240 Months">240 Months</option>
+                        <option value="2" name="300 Months">300 Months</option>
+                        <option value="1" name="360 Months">360 Months</option>
+                        <option value="0" name="480 Months">480 Months or More</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group The columns">
+                    <p for="inputPassword4">Have you taken a loan with us before?</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Loan" id="inlineRadio8"
+                            value="1" required='required'>
+                        <label class="form-check-label" for="inlineRadio8">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Loan" id="inlineRadio9"
+                            value="0" required='required'>
+                        <label class="form-check-label" for="inlineRadio9">No</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group The columns">
+                    <p for="inputState">Which of these area is your property located?</p>
+                    <select id="inputState" class="form-control" name="Area" required='required' >
+                        <!-- <option selected>Choose...</option> -->
+                        <option value="2" name="Urban">Urban</option>
+                        <option value="1" name="Sub Urban"> Sub-Urban</option>
+                        <option value="0" name="Rural">Rural</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center my-5">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+    </section>
+
+
+    <script src="../static/vendor/jquery.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/./js/scripts.js"></script>
+</body>
+
+</html>
