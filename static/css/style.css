@@ -1,0 +1,205 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom ,#8c22d2, #1f3d46cc) , url(../img/money.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary{
+    color: #ffffff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+
+    animation: moveInLeft ease-in-out 2s;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation: moveInRight 2s ease-in-out;
+    margin: 5rem 0;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link, .btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 5rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    transform: translateY(-0.3rem);
+}
+
+.btn:active{
+    transform: translateY(0.1rem);
+}
+
+.btn-white{
+    background: #130101;
+    color: rgba(245, 240, 240, 0.972);
+}
+
+.btn-primary {
+    font-size: 16px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.btn:after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after{
+    background-color: #ffffff;
+}
+
+.btn:hover:after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated{
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.result-container{
+    background: #070ab4;
+}
+
+.result-area{
+    background: rgb(206, 219, 219);
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.result-body{
+    height: 90vh;
+}
+
+.blue-text{
+    color: #5722d2f3;
+}
+
+@media (max-width: 767px) and (max-width: 979px) {
+
+    body{
+        padding: 1rem;
+    }
+
+    .heading-primary-main {
+        font-size: 2rem;
+        letter-spacing: 1.5rem;
+    }
+
+    .heading-primary-sub {
+        font-size: 1rem;
+        letter-spacing: 0.8rem;
+    }
+
+}
