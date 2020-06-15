@@ -1,2 +1,2 @@
 # Celestine-Azonobi
-This is for my personal work
+This is a Loan Prediction Machine Learning Project.  
