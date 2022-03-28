@@ -1,2 +1,3 @@
-# Python and Flask
-This is a Loan Prediction Machine Learning Project.  
+# Loan Prediction With Python
+This is a Loan Prediction Machine Learning Project
+Include Data Expolration and Visualization.  
